@@ -26,7 +26,7 @@ android {
             if (variant.buildType.name == 'debug') {
                 variant.assemble.doLast {
                     exec {
-                        commandLine '/SDKs/Android3/platform-tools/adb', 'push', 'build/outputs/apk/MyPlugin.apk', '/sdcard/DroidScript/Plugins/MyPlugin.apk'
+                        commandLine '/Users/user/AppData/Local/Android/sdk/platform-tools/adb', 'push', 'build/outputs/apk/MyPlugin.apk', '/sdcard/DroidScript/Plugins/MyPlugin.apk'
                     }
                 }
             }
